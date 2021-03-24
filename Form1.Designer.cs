@@ -29,6 +29,7 @@ namespace Lab3
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookSales));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuNew = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,6 +38,7 @@ namespace Lab3
             this.mnuExit = new System.Windows.Forms.ToolStripMenuItem();
             this.pnBody = new System.Windows.Forms.Panel();
             this.gbBoxInfo = new System.Windows.Forms.GroupBox();
+            this.chkDisStudent = new System.Windows.Forms.CheckBox();
             this.chkDis = new System.Windows.Forms.CheckBox();
             this.txtNet = new System.Windows.Forms.TextBox();
             this.lbNetDue = new System.Windows.Forms.Label();
@@ -50,7 +52,7 @@ namespace Lab3
             this.lbPrice = new System.Windows.Forms.Label();
             this.lbQuality = new System.Windows.Forms.Label();
             this.lbTitle = new System.Windows.Forms.Label();
-            this.chkDisStudent = new System.Windows.Forms.CheckBox();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.menuStrip1.SuspendLayout();
             this.pnBody.SuspendLayout();
             this.gbBoxInfo.SuspendLayout();
@@ -117,6 +119,7 @@ namespace Lab3
             // 
             // gbBoxInfo
             // 
+            this.gbBoxInfo.Controls.Add(this.bunifuLabel1);
             this.gbBoxInfo.Controls.Add(this.chkDisStudent);
             this.gbBoxInfo.Controls.Add(this.chkDis);
             this.gbBoxInfo.Controls.Add(this.txtNet);
@@ -139,6 +142,18 @@ namespace Lab3
             this.gbBoxInfo.TabIndex = 0;
             this.gbBoxInfo.TabStop = false;
             this.gbBoxInfo.Text = "Book Information";
+            // 
+            // chkDisStudent
+            // 
+            this.chkDisStudent.AutoSize = true;
+            this.chkDisStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkDisStudent.ForeColor = System.Drawing.Color.Black;
+            this.chkDisStudent.Location = new System.Drawing.Point(390, 321);
+            this.chkDisStudent.Name = "chkDisStudent";
+            this.chkDisStudent.Size = new System.Drawing.Size(146, 22);
+            this.chkDisStudent.TabIndex = 13;
+            this.chkDisStudent.Text = "Distinct Student";
+            this.chkDisStudent.UseVisualStyleBackColor = true;
             // 
             // chkDis
             // 
@@ -251,17 +266,19 @@ namespace Lab3
             this.lbTitle.TabIndex = 0;
             this.lbTitle.Text = "Title";
             // 
-            // chkDisStudent
+            // bunifuLabel1
             // 
-            this.chkDisStudent.AutoSize = true;
-            this.chkDisStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkDisStudent.ForeColor = System.Drawing.Color.Black;
-            this.chkDisStudent.Location = new System.Drawing.Point(390, 321);
-            this.chkDisStudent.Name = "chkDisStudent";
-            this.chkDisStudent.Size = new System.Drawing.Size(146, 22);
-            this.chkDisStudent.TabIndex = 13;
-            this.chkDisStudent.Text = "Distinct Student";
-            this.chkDisStudent.UseVisualStyleBackColor = true;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.CursorType = null;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel1.Location = new System.Drawing.Point(390, 156);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(79, 18);
+            this.bunifuLabel1.TabIndex = 14;
+            this.bunifuLabel1.Text = "bunifuLabel1";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // BookSales
             // 
@@ -309,6 +326,7 @@ namespace Lab3
         private System.Windows.Forms.TextBox txtDis;
         private System.Windows.Forms.Label lbDiscount;
         private System.Windows.Forms.CheckBox chkDisStudent;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
     }
 }
 
